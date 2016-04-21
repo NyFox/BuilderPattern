@@ -25,9 +25,7 @@ public class Item {
         boxRead = (Box)ois.readObject();
         ois.close();
 
-        System.out.println(boxRead.toString());		
-			
-	   //System.out.println(item);	// debug class Box
+        System.out.println(boxRead.toString());
 		
 	}
 
