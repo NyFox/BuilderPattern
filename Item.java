@@ -11,14 +11,14 @@ public class Item {
 				.GRU("Intel i5-3210")
 				.RAM(4214)
 				.build();
-        /*
+        //Serialization
 		FileOutputStream fos = new FileOutputStream("box.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(itemWrite);
         oos.flush();
         oos.close();
-		*/
-		
+
+		//Deserialization
 		Box boxRead;
         FileInputStream fis = new FileInputStream("box.ser");
         ObjectInputStream ois = new ObjectInputStream(fis);
@@ -27,7 +27,7 @@ public class Item {
 
         System.out.println(boxRead.toString());		
 			
-	  //System.out.println(item);	// debug class Box
+	   //System.out.println(item);	// debug class Box
 		
 	}
 
